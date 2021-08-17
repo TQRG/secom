@@ -1,0 +1,136 @@
+.Convention {
+  text-align: left;
+}
+
+.Convention-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Convention-logo {
+    animation: Convention-logo-spin infinite 20s linear;
+  }
+}
+
+#illustration{
+  padding-top: 29%;
+  width: 31%; height: auto; 
+}
+
+#presentation{
+  padding: 4.5em;
+  padding-top: 20em;
+}
+
+.Convention-header {
+  background-color: #4a5fac;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.footer {
+  background-color: #4a5fac;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  color: white;
+}
+
+.footer{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer a{
+  color: white;
+}
+
+.footer a:hover{
+  color: #0d2065;
+}
+
+.main-section {
+  padding-top: 6em;
+  padding-bottom: 6em;
+  padding-left: 9em;
+  padding-right: 9em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(8px + 2vmin);
+}
+
+.main-section h1{
+  font-family: 'Raleway', sans-serif; 
+  font-weight:800; 
+  color: #4a5fac;
+  font-size: 50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+hr{
+  margin-bottom: 2em;
+}
+
+.details{
+  padding-top: 1em;
+}
+
+.details-code{
+  color: #4a5fac !important;
+  line-height: 28px !important;
+  font-size: 25px !important;
+}
+
+pre{
+    overflow-x: auto;
+    margin: 1.5em 0 3em;
+    padding: 20px;
+    max-width: 100%;
+    border: 1px solid #000;
+    color: var(--whitegrey);
+    background: #0e1012;
+    border-radius: 5px;
+}
+
+code{
+  font-size: 17px !important;
+  line-height: 10px;
+  color: #ffffff !important;
+  font-family: monospace;
+}
+
+#presentation > h1{
+  font-family: 'Raleway', sans-serif; 
+  font-weight:800; 
+  color: white;
+  font-size: 50px;
+}
+
+#presentation > p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+@keyframes Convention-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
