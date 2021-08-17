@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sec-commits/static/css/main.baa8e5b1.chunk.css",
-    "main.js": "/sec-commits/static/js/main.44603125.chunk.js",
-    "main.js.map": "/sec-commits/static/js/main.44603125.chunk.js.map",
+    "main.js": "/sec-commits/static/js/main.f833cfe7.chunk.js",
+    "main.js.map": "/sec-commits/static/js/main.f833cfe7.chunk.js.map",
     "runtime-main.js": "/sec-commits/static/js/runtime-main.f404a836.js",
     "runtime-main.js.map": "/sec-commits/static/js/runtime-main.f404a836.js.map",
     "static/css/2.da1eef19.chunk.css": "/sec-commits/static/css/2.da1eef19.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.da1eef19.chunk.css",
     "static/js/2.157b1d79.chunk.js",
     "static/css/main.baa8e5b1.chunk.css",
-    "static/js/main.44603125.chunk.js"
+    "static/js/main.f833cfe7.chunk.js"
   ]
 }
