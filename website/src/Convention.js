@@ -15,7 +15,7 @@ function Convention() {
           <div class="col col-md-7" id="presentation">
             <h1>SECOM CONVENTION</h1>
             <p>A convention for security commit messages</p>
-            <Button variant="outline-light">Best Practices</Button>{' '}
+            <Button variant="outline-light">Best Practices - <i>Soon</i></Button>{' '}
             <a href="https://github.com/TQRG/security-patches-dataset" target="_blank">
               <Button variant="outline-light">Dataset</Button>
           </a>
@@ -128,15 +128,15 @@ See also: #456, #789
           </pre>
         <p><strong>Important:</strong> <br></br>
         <code class="details-code">&lt;type&gt;</code>{' '},{' '}
-        <code class="details-code">&lt;header/subject&gt;</code>{' '},{' '}
-        <code class="details-code">&lt;CVE-ID&gt;</code>,<br></br>
+        <code class="details-code">&lt;header/subject&gt;</code>,<br></br>
+        <code class="details-code">&lt;CVE-ID&gt;</code>,
         <code class="details-code">&lt;body&gt;</code>{' '},{' '}
         <code class="details-code">&lt;WEAKNESS&gt;</code>
         <br></br>
         <br></br>
         In the future, we plan to infer the importance of each field
         and determine different levels of compliance. For now, we 
-        believe these are the required fields to detect and classify security
+        believe this set of fields is the minimum required to detect and classify security
         commits.
         </p>
           </div>
@@ -165,7 +165,7 @@ See also: #456, #789
         <Container>
           <Row>
             <h1>Example</h1>
-            <p>This is an example of application of SECOM convention to a known security commit message <a href="https://github.com/curl/curl/commit/75ca568fa1c19de4c5358fed246686de8467c238" target="_blank"><code class="details-code">[curl/curl/75ca568]</code></a>: </p>
+            <p>This is an example of the application of SECOM convention to a known security commit message <a href="https://github.com/curl/curl/commit/75ca568fa1c19de4c5358fed246686de8467c238" target="_blank"><code class="details-code">[curl/curl/75ca568]</code></a>: </p>
             <div class="col col-md-12">
             <pre>
             <code>
