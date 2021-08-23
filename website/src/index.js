@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Convention from './Convention';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "283108977"; 
+ReactGA.initialize(TRACKING_ID);
 
 ReactDOM.render(
   <React.StrictMode>

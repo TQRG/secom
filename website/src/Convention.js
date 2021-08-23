@@ -37,31 +37,30 @@ function Convention() {
             </p>
             <pre>
               <code>
-              patch: Summarize changes in around 50 characters or less (CVE-YEAR-NO)
+              patch: Summarize changes in ~50 characters (CVE-YEAR-NO)
               <br></br>
               <br></br>
-              Detailed explanation of the subject/header. Wrap it to about 75 words or so.
+              Detailed explanation of the subject/header in ~75 words.
+              <br></br>
+              Explain the security issue that this commit is patching. 
+              <br></br>
+              Focus on why this patch is important and its impact.  
+              <br></br>
+              Describe how the issue is patched. 
               <br></br>
               <br></br>
-              Explain the security issue that this commit is patching. Focus on why this patch 
-              <br></br>
-              is important and its impact (e.g., consequences of the patch). Describe how the 
-              <br></br>
-              issue is patched. 
-              <br></br>
-              <br></br>
-SEVERITY: The severity of the  issue (LOW, MEDIUM, HIGH,  CRITICAL).
+SEVERITY: The severity of the  issue (LOW, MEDIUM, HIGH, CRITICAL).
 <br></br>
 WEAKNESS: The weakness name or CWE-ID.
 <br></br>
-DETECTION: The method used to detect the issue (TOOL, MANUAL, EXPLOIT)
+DETECTION: The method used to detect the issue (TOOL, MANUAL, EXPLOIT).
 <br></br>
-REPORT: https://link-to-report/
+REPORT: http://link-to-report/
 <br></br>
 <br></br>
-Reported by: Reporter Name &lt;reporter-email@host.com&gt;
+REPORTED-BY: reporter Name &lt;reporter-email@host.com&gt;
 <br></br>
-Signed-off by: Your Name &lt;your-email@yourhost.com&gt;
+SIGNED-OFF-BY: your Name &lt;your-email@yourhost.com&gt;
 <br></br>
 <br></br>
 If you use an issue tracker, add reference to it here:
@@ -112,9 +111,9 @@ See also: #456, #789
               REPORT: &lt;REPORT_LINK&gt;
               <br></br>
               <br></br>
-              Reported by: &lt;NAME&gt;
+              REPORTED-BY: &lt;NAME&gt; &lt;CONTACT&gt;
               <br></br>
-              Signed-off by: &lt;NAME&gt;
+              SIGNED-OFF-BY: &lt;NAME&gt; &lt;CONTACT&gt;
               <br></br>
               <br></br>
               BUG-TRACKER: &lt;BUG-TRACKER-LINK&gt;
@@ -131,29 +130,30 @@ See also: #456, #789
         <code class="details-code">&lt;header/subject&gt;</code>,<br></br>
         <code class="details-code">&lt;CVE-ID&gt;</code>,
         <code class="details-code">&lt;body&gt;</code>{' '},{' '}
-        <code class="details-code">&lt;WEAKNESS&gt;</code>
+        <code class="details-code">SEVERITY</code>{' '},{' '}
+        <code class="details-code">WEAKNESS</code>
         <br></br>
         <br></br>
         In the future, we plan to infer the importance of each field
         and determine different levels of compliance. For now, we 
-        believe this set of fields is the minimum required to detect and classify security
+        believe the previous set of fields is the minimum required to detect and classify security
         commits.
         </p>
           </div>
           <div class="col col-md-6 details">
             <ul>
-              <li>A <code class="details-code">type</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">[1]</a>. Our suggestion is the word 
+              <li>A <code class="details-code">&lt;type&gt;</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">[1]</a>. Our suggestion is the word 
               patch since it is usually used to refer to security fixes.</li>
-              <li><code class="details-code">header/subject</code>: 50-72 chars; capitalized; no period in the end; imperative form.</li>
-              <li><code class="details-code">CVE-ID</code>: When available.</li>
+              <li><code class="details-code">&lt;header/subject&gt;</code>: ~50 chars (max 72 chars); capitalized; no period in the end; imperative form.</li>
+              <li><code class="details-code">&lt;CVE-ID&gt;</code>: When available.</li>
 
-              <li><code class="details-code">body</code>: Describe what (problem), why (impact) and how (patch). 75 words (25 words per point).</li>
+              <li><code class="details-code">&lt;body&gt;</code>: Describe what (problem), why (impact) and how (patch). ~75 words (25 words per point).</li>
               <li><code class="details-code">SEVERITY</code>: Severity of the issue.<br></br>Values: LOW, MEDIUM, HIGH, CRITICAL</li>
               <li><code class="details-code">WEAKNESS</code>: Name or CWE-ID.</li>
-              <li><code class="details-code">DETECTION</code>: Detection method.<br></br>Values: TOOL, MANUALLY, BUG BOUNTY, etc.</li>
+              <li><code class="details-code">DETECTION</code>: Detection method.<br></br>Values: TOOL, MANUAL, EXPLOIT, etc.</li>
               <li><code class="details-code">REPORT</code>: Link for vulnerability report.</li> 
-              <li><code class="details-code">Reported by</code>: Name/Contact of the person that reported the issue.</li>
-              <li><code class="details-code">Signed-off by</code>: Name/Contact of the person that closed the issue.</li>
+              <li><code class="details-code">REPORTED-BY</code>: Name/Contact of the person that reported the issue.</li>
+              <li><code class="details-code">SIGNED-OFF-BY</code>: Name/Contact of the person that closed the issue.</li>
               <li><code class="details-code">BUG-TRACKER</code>: Link to the issue in an external bug-tracker.</li>
               <li><code class="details-code">Resolves.. See also</code>: When GitHub is used to manage security fixes.</li>
             </ul>
@@ -194,9 +194,9 @@ DETECTION: MANUAL
 REPORT: https://curl.se/docs/CVE-2012-0036.html
 <br></br>
 <br></br>
-Reported-by: Dan Fandrich
+REPORTED-BY: Dan Fandrich
 <br></br>
-Signed-off by: Daniel Stenberg (daniel@haxx.se)
+SIGNED-OFF-BY: Daniel Stenberg (daniel@haxx.se)
 <br></br>
 <br></br>
 Resolves: #17940
@@ -210,11 +210,11 @@ See also: #17937
         <Container>
           <Row>
             <h1>Sources</h1>
-            <ul>
+            <ol>
               <li>Conventional Commits V1.0.0 <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">🔗</a></li>
               <li>How to Write a Git Commit Message by Chris Beams <a href="https://chris.beams.io/posts/git-commit/" target="_blank">🔗</a></li>
               <li>A good commit message looks like this by Linus Torvalds <a href="https://gist.github.com/matthewhudson/1475276" target="_blank">🔗</a></li>
-            </ul>
+            </ol>
           </Row>
         </Container>
         </div>
