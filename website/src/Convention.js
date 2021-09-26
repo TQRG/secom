@@ -17,8 +17,11 @@ function Convention() {
             <p>A convention for security commit messages</p>
             <Button variant="outline-light">Best Practices - <i>Soon</i></Button>{' '}
             <a href="https://github.com/TQRG/security-patches-dataset" target="_blank">
-              <Button variant="outline-light">Dataset</Button>
-          </a>
+              <Button variant="outline-light">Dataset</Button>{' '}
+            </a>
+            <a href="https://forms.gle/D4PizUX68qXWebjj8" target="_blank">
+              <Button variant="outline-light">Feedback</Button>
+            </a>
            
           </div>
           <div class="col col-md-4" id="illustration">
@@ -37,48 +40,55 @@ function Convention() {
             </p>
             <pre>
               <code>
-              patch: Summarize changes in ~50 characters (CVE-YEAR-NO)
+              1   patch: subject/header containing summary of changes in ~50 characters (CVE-ID,)
               <br></br>
+              2
               <br></br>
-              Detailed explanation of the subject/header in ~75 words.
+              3   Detailed explanation of the subject/header in ~75 words.
               <br></br>
-              Explain the security issue that this commit is patching. 
+              4   Explain the security issue(s) that this commit is patching. 
               <br></br>
-              Focus on why this patch is important and its impact.  
+              5   Focus on why this patch is important and its impact.  
               <br></br>
-              Describe how the issue is patched. 
+              6   Describe how the issue is patched. 
               <br></br>
+              7
               <br></br>
-SEVERITY: The severity of the  issue (LOW, MEDIUM, HIGH, CRITICAL).
-<br></br>
-WEAKNESS: The weakness name or CWE-ID.
-<br></br>
-DETECTION: The method used to detect the issue (TOOL, MANUAL, EXPLOIT).
-<br></br>
-REPORT: http://link-to-report/
-<br></br>
-<br></br>
-REPORTED-BY: reporter Name &lt;reporter-email@host.com&gt;
-<br></br>
-SIGNED-OFF-BY: your Name &lt;your-email@yourhost.com&gt;
-<br></br>
-<br></br>
-If you use an issue tracker, add reference to it here:
-<br></br>
-<br></br>
-[if external issue tracker]
-<br></br>
-BUG-TRACKER: https://link-to-bug-tracker/id  
-<br></br>
-<br></br>
-
-[if github used as issue tracker]
-<br></br>
-
-Resolves: #123
-<br></br>
-
-See also: #456, #789
+              8   <strong>[For Each Weakness in Weaknesses:]</strong>
+              <br></br>
+              9   Weakness: weakness identification or CWE-ID.
+              <br></br>
+              10  Severity: severity of the  issue (Low, Medium, High, Critical).
+              <br></br>
+              11  Detection: method used to detect the issue (Tool, Manual, Exploit).
+              <br></br>
+              12  Report: http://link-to-report/
+              <br></br>
+              13  <strong>[End]</strong>
+              <br></br>
+              14
+              <br></br>
+              15  Reported-by: reporter name 1 &lt;reporter-email-1@host.com&gt;
+              <br></br>
+              16  Reported-by: reporter name 2 &lt;reporter-email-2@host.com&gt;
+              <br></br>
+              17  Signed-off-by: your name &lt;your-email@yourhost.com&gt;
+              <br></br>
+              18
+              <br></br>
+              19  <strong>[If you use an issue tracker, add reference to it here:]</strong>
+              <br></br>
+              20  <strong>[if external issue tracker:]</strong>
+              <br></br>
+              21  Bug-tracker: https://link-to-bug-tracker/id 
+              <br></br>
+              22
+              <br></br>
+              23  <strong>[if github used as issue tracker:]</strong>
+              <br></br>
+              24  Resolves: #123
+              <br></br>
+              25  See also: #456, #789
 
               </code>
             </pre>
@@ -102,27 +112,27 @@ See also: #456, #789
               &lt;body&gt;
               <br></br>
               <br></br>
-              SEVERITY: &lt;LOW, MEDIUM, HIGH,  CRITICAL&gt;
+              Weakness: &lt;Weakness Name or CWE-ID&gt;
               <br></br>
-              WEAKNESS: &lt;WEAKNESS NAME or CWE-ID&gt;
+              Severity: &lt;Low, Medium, High and Critical&gt;
               <br></br>
-              DETECTION: &lt;DETECTION&gt;
+              Detection: &lt;Detection Method&gt;
               <br></br>
-              REPORT: &lt;REPORT_LINK&gt;
-              <br></br>
-              <br></br>
-              REPORTED-BY: &lt;NAME&gt; &lt;CONTACT&gt;
-              <br></br>
-              SIGNED-OFF-BY: &lt;NAME&gt; &lt;CONTACT&gt;
+              Report: &lt;Report Link&gt;
               <br></br>
               <br></br>
-              BUG-TRACKER: &lt;BUG-TRACKER-LINK&gt;
+              Reported-by: &lt;Name&gt; &lt;Contact&gt;
+              <br></br>
+              Signed-off-by: &lt;Name&gt; &lt;Contact&gt;
+              <br></br>
+              <br></br>
+              Bug-tracker: &lt;Bug-tracker Link&gt;
               <br></br>
               OR
               <br></br>
-              Resolves: &lt;ISSUE/PR NO&gt;
+              Resolves: &lt;Issue/PR No.&gt;
               <br></br>
-              See also: &lt;ISSUE/PR NO&gt;
+              See also: &lt;Issue/PR No.&gt;
             </code>
           </pre>
         <p><strong>Important:</strong> <br></br>
@@ -130,8 +140,8 @@ See also: #456, #789
         <code class="details-code">&lt;header/subject&gt;</code>,<br></br>
         <code class="details-code">&lt;CVE-ID&gt;</code>,
         <code class="details-code">&lt;body&gt;</code>{' '},{' '}
-        <code class="details-code">SEVERITY</code>{' '},{' '}
-        <code class="details-code">WEAKNESS</code>
+        <code class="details-code">Severity</code>{' '},{' '}
+        <code class="details-code">Weakness</code>
         <br></br>
         <br></br>
         In the future, we plan to infer the importance of each field
@@ -148,13 +158,13 @@ See also: #456, #789
               <li><code class="details-code">&lt;CVE-ID&gt;</code>: When available.</li>
 
               <li><code class="details-code">&lt;body&gt;</code>: Describe what (problem), why (impact) and how (patch). ~75 words (25 words per point).</li>
-              <li><code class="details-code">SEVERITY</code>: Severity of the issue.<br></br>Values: LOW, MEDIUM, HIGH, CRITICAL</li>
-              <li><code class="details-code">WEAKNESS</code>: Name or CWE-ID.</li>
-              <li><code class="details-code">DETECTION</code>: Detection method.<br></br>Values: TOOL, MANUAL, EXPLOIT, etc.</li>
-              <li><code class="details-code">REPORT</code>: Link for vulnerability report.</li> 
-              <li><code class="details-code">REPORTED-BY</code>: Name/Contact of the person that reported the issue.</li>
-              <li><code class="details-code">SIGNED-OFF-BY</code>: Name/Contact of the person that closed the issue.</li>
-              <li><code class="details-code">BUG-TRACKER</code>: Link to the issue in an external bug-tracker.</li>
+              <li><code class="details-code">Weakness</code>: Name or CWE-ID.</li>
+              <li><code class="details-code">Severity</code>: Severity of the issue.<br></br>Values: Low, Medium, High, Critical</li>
+              <li><code class="details-code">Detection</code>: Detection method.<br></br>Values: Tool, Manual, Exploit, etc.</li>
+              <li><code class="details-code">Report</code>: Link for vulnerability report.</li> 
+              <li><code class="details-code">Reported-by</code>: Name/Contact of the person that reported the issue.</li>
+              <li><code class="details-code">Signed-off-by</code>: Name/Contact of the person that closed the issue.</li>
+              <li><code class="details-code">Bug-tracker</code>: Link to the issue in an external bug-tracker.</li>
               <li><code class="details-code">Resolves.. See also</code>: When GitHub is used to manage security fixes.</li>
             </ul>
           </div>
@@ -185,18 +195,18 @@ pop3://pop3.example.com/1%0d%0aDELE%201 when the app wants a URL to get a mail <
 and instead this would delete one.
 <br></br>
 <br></br>
-SEVERITY: HIGH
+Weakness: CWE-89
 <br></br>
-WEAKNESS: CWE-89
+Severity: High
 <br></br>
-DETECTION: MANUAL
+Detection: Manual
 <br></br>
-REPORT: https://curl.se/docs/CVE-2012-0036.html
+Report: https://curl.se/docs/CVE-2012-0036.html
 <br></br>
 <br></br>
-REPORTED-BY: Dan Fandrich
+Reported-by: Dan Fandrich
 <br></br>
-SIGNED-OFF-BY: Daniel Stenberg (daniel@haxx.se)
+Signed-off-by: Daniel Stenberg (daniel@haxx.se)
 <br></br>
 <br></br>
 Resolves: #17940

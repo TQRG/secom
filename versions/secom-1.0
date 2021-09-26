@@ -1,0 +1,23 @@
+patch: Summarize changes in ~50 characters (CVE-YEAR-NO)
+
+Detailed explanation of the subject/header in ~75 words.
+Explain the security issue that this commit is patching.
+Focus on why this patch is important and its impact.
+Describe how the issue is patched.
+
+SEVERITY: The severity of the  issue (LOW, MEDIUM, HIGH, CRITICAL).
+WEAKNESS: The weakness name or CWE-ID.
+DETECTION: The method used to detect the issue (TOOL, MANUAL, EXPLOIT).
+REPORT: http://link-to-report/
+
+REPORTED-BY: reporter Name <reporter-email@host.com>
+SIGNED-OFF-BY: your Name <your-email@yourhost.com>
+
+If you use an issue tracker, add reference to it here:
+
+[if external issue tracker]
+BUG-TRACKER: https://link-to-bug-tracker/id
+
+[if github used as issue tracker]
+Resolves: #123
+See also: #456, #789
