@@ -152,7 +152,9 @@ function Convention() {
           </div>
           <div class="col col-md-6 details">
             <ul>
-              <li>A <code class="details-code">&lt;type&gt;</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">[1]</a>. Our suggestion is the word 
+            <li>Atomic changes: Commit each patch as a separate change <a href="https://www.freshconsulting.com/insights/blog/atomic-commits/" target="_blank">[4]</a>.</li>
+
+            <li>A <code class="details-code">&lt;type&gt;</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">[1]</a>. Our suggestion is the word 
               patch since it is usually used to refer to security fixes.</li>
               <li><code class="details-code">&lt;header/subject&gt;</code>: ~50 chars (max 72 chars); capitalized; no period in the end; imperative form.</li>
               <li><code class="details-code">&lt;CVE-ID&gt;</code>: When available.</li>
@@ -224,6 +226,7 @@ See also: #17937
               <li>Conventional Commits V1.0.0 <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">🔗</a></li>
               <li>How to Write a Git Commit Message by Chris Beams <a href="https://chris.beams.io/posts/git-commit/" target="_blank">🔗</a></li>
               <li>A good commit message looks like this by Linus Torvalds <a href="https://gist.github.com/matthewhudson/1475276" target="_blank">🔗</a></li>
+              <li>Developer Tip: Keep Your Commits “Atomic” by Sean Patterson <a href="https://www.freshconsulting.com/insights/blog/atomic-commits/" target="_blank">🔗</a></li>
             </ol>
           </Row>
         </Container>
