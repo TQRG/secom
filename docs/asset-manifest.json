@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/secom/static/css/main.baa8e5b1.chunk.css",
-    "main.js": "/secom/static/js/main.0cd7fb44.chunk.js",
-    "main.js.map": "/secom/static/js/main.0cd7fb44.chunk.js.map",
+    "main.js": "/secom/static/js/main.2e071a90.chunk.js",
+    "main.js.map": "/secom/static/js/main.2e071a90.chunk.js.map",
     "runtime-main.js": "/secom/static/js/runtime-main.0dc3b04c.js",
     "runtime-main.js.map": "/secom/static/js/runtime-main.0dc3b04c.js.map",
     "static/css/2.da1eef19.chunk.css": "/secom/static/css/2.da1eef19.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.da1eef19.chunk.css",
     "static/js/2.d843c375.chunk.js",
     "static/css/main.baa8e5b1.chunk.css",
-    "static/js/main.0cd7fb44.chunk.js"
+    "static/js/main.2e071a90.chunk.js"
   ]
 }
