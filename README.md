@@ -58,7 +58,7 @@ See also: <Issue/PR No.>
 ```
 
 * Atomic changes: Commit each patch as a separate change [4].
-* A `<type>` should be assigned to each commit [1]. Our suggestion is the word vuln-fix to specify the fix is vulnerability related.
+* A `<type>` should be assigned to each commit [1]. Our suggestion is the usage of `vuln-fix to specify the fix is related to a vulnerability.
 * `<header/subject>`: ~50 chars (max 72 chars); capitalized; no period in the end; imperative form.
 * `<Vuln-ID>`: When available; e.g., CVE, OSV, GHSA, and other formats.
 * `<body>`: Describe what (problem), why (impact) and how (patch). ~75 words (25 words per point).
