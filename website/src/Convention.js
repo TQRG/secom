@@ -40,7 +40,7 @@ function Convention() {
             </p>
             <pre>
               <code>
-              1   patch: subject/header containing summary of changes in ~50 characters (CVE-ID,)
+              1   vuln-fix: subject/header containing summary of changes in ~50 characters (Vuln-ID,)
               <br></br>
               2
               <br></br>
@@ -58,37 +58,41 @@ function Convention() {
               <br></br>
               9   Weakness: weakness identification or CWE-ID.
               <br></br>
-              10  Severity: severity of the  issue (Low, Medium, High, Critical).
+              10  Severity: severity of the issue (Low, Medium, High, Critical).
               <br></br>
-              11  Detection: method used to detect the issue (Tool, Manual, Exploit).
+              11  CVSS: numerical representation (0-10) of the vulnerability severity.
               <br></br>
-              12  Report: http://link-to-report/
+              12  Detection: method used to detect the issue (Tool, Manual, Exploit).
               <br></br>
-              13  <strong>[End]</strong>
+              13  Report: http://link-to-report/
               <br></br>
-              14
+              14  Introduced in: commit hash.
               <br></br>
-              15  Reported-by: reporter name 1 &lt;reporter-email-1@host.com&gt;
+              15  <strong>[End]</strong>
               <br></br>
-              16  Reported-by: reporter name 2 &lt;reporter-email-2@host.com&gt;
+              16
               <br></br>
-              17  Signed-off-by: your name &lt;your-email@yourhost.com&gt;
+              17  Reported-by: reporter name 1 &lt;reporter-email-1@host.com&gt;
               <br></br>
-              18
+              18  Reported-by: reporter name 2 &lt;reporter-email-2@host.com&gt;
               <br></br>
-              19  <strong>[If you use an issue tracker, add reference to it here:]</strong>
+              19  Signed-off-by: your name &lt;your-email@yourhost.com&gt;
               <br></br>
-              20  <strong>[if external issue tracker:]</strong>
+              20
               <br></br>
-              21  Bug-tracker: https://link-to-bug-tracker/id 
+              21  <strong>[If you use an issue tracker, add reference to it here:]</strong>
               <br></br>
-              22
+              22  <strong>[if external issue tracker:]</strong>
               <br></br>
-              23  <strong>[if github used as issue tracker:]</strong>
+              23  Bug-tracker: https://link-to-bug-tracker/id 
               <br></br>
-              24  Resolves: #123
+              24
               <br></br>
-              25  See also: #456, #789
+              25  <strong>[if github used as issue tracker:]</strong>
+              <br></br>
+              26  Resolves: #123
+              <br></br>
+              27  See also: #456, #789
 
               </code>
             </pre>
@@ -106,7 +110,7 @@ function Convention() {
             <div class="col col-md-6">
             <pre>
             <code>
-              &lt;type&gt;: &lt;header/subject&gt; (&lt;CVE-ID&gt;)
+              &lt;type&gt;: &lt;header/subject&gt; (&lt;Vuln-ID&gt;)
               <br></br>
               <br></br>
               &lt;body&gt;
@@ -116,9 +120,13 @@ function Convention() {
               <br></br>
               Severity: &lt;Low, Medium, High and Critical&gt;
               <br></br>
+              CVSS: &lt;Numerical representation (0-10) of severity&gt;
+              <br></br>
               Detection: &lt;Detection Method&gt;
               <br></br>
               Report: &lt;Report Link&gt;
+              <br></br>
+              Introduced in: &lt;Commit Hash&gt;
               <br></br>
               <br></br>
               Reported-by: &lt;Name&gt; &lt;Contact&gt;
@@ -138,7 +146,7 @@ function Convention() {
         <p><strong>Important:</strong> <br></br>
         <code class="details-code">&lt;type&gt;</code>{' '},{' '}
         <code class="details-code">&lt;header/subject&gt;</code>,<br></br>
-        <code class="details-code">&lt;CVE-ID&gt;</code>,
+        <code class="details-code">&lt;Vuln-ID&gt;</code>,
         <code class="details-code">&lt;body&gt;</code>{' '},{' '}
         <code class="details-code">Severity</code>{' '},{' '}
         <code class="details-code">Weakness</code>
@@ -154,16 +162,17 @@ function Convention() {
             <ul>
             <li>Atomic changes: Commit each patch as a separate change <a href="https://www.freshconsulting.com/insights/blog/atomic-commits/" target="_blank">[4]</a>.</li>
 
-            <li>A <code class="details-code">&lt;type&gt;</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">[1]</a>. Our suggestion is the word 
-              patch since it is usually used to refer to security fixes.</li>
+            <li>A <code class="details-code">&lt;type&gt;</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">[1]</a>. Our suggestion is to use 
+            <code class="details-code">vuln-fix</code> to specify the fix is related to a vulnerability.</li>
               <li><code class="details-code">&lt;header/subject&gt;</code>: ~50 chars (max 72 chars); capitalized; no period in the end; imperative form.</li>
-              <li><code class="details-code">&lt;CVE-ID&gt;</code>: When available.</li>
-
+              <li><code class="details-code">&lt;Vuln-ID&gt;</code>: When available; e.g., CVE, OSV, GHSA, and other formats.</li>
               <li><code class="details-code">&lt;body&gt;</code>: Describe what (problem), why (impact) and how (patch). ~75 words (25 words per point).</li>
               <li><code class="details-code">Weakness</code>: Name or CWE-ID.</li>
               <li><code class="details-code">Severity</code>: Severity of the issue.<br></br>Values: Low, Medium, High, Critical</li>
+              <li><code class="details-code">CVSS</code>: Numerical (0-10) representation of the severity of a security vulnerability (Common Vulnerability Scoring System).</li>
               <li><code class="details-code">Detection</code>: Detection method.<br></br>Values: Tool, Manual, Exploit, etc.</li>
               <li><code class="details-code">Report</code>: Link for vulnerability report.</li> 
+              <li><code class="details-code">Introduced in</code>: Commit hash from the commit that introduced the vulnerability.</li> 
               <li><code class="details-code">Reported-by</code>: Name/Contact of the person that reported the issue.</li>
               <li><code class="details-code">Signed-off-by</code>: Name/Contact of the person that closed the issue.</li>
               <li><code class="details-code">Bug-tracker</code>: Link to the issue in an external bug-tracker.</li>
