@@ -5,6 +5,8 @@ import './Convention.css';
 import { Container, Row, Button } from 'react-bootstrap';
 
 import {ReactComponent as Illustration} from './assets/commit.svg';
+import GitHubButton from 'react-github-btn'
+
 
 function Convention() {
   return (
@@ -15,14 +17,18 @@ function Convention() {
           <div class="col col-md-7" id="presentation">
             <h1>SECOM CONVENTION</h1>
             <p>A convention for security commit messages</p>
-            <Button variant="outline-light">Best Practices - <i>Soon</i></Button>{' '}
+            <a href="https://github.com/TQRG/secom/CONFIG.md" target="_blank">
+              <Button variant="outline-light">How to configure</Button>{' '}
+            </a>
+            <a href="https://forms.gle/D4PizUX68qXWebjj8" target="_blank">
+              <Button variant="outline-light">Feedback</Button>{' '}
+            </a>
+            {/* <Button variant="outline-light">Best Practices - <i>Soon</i></Button>{' '} */}
             <a href="https://github.com/TQRG/security-patches-dataset" target="_blank">
               <Button variant="outline-light">Dataset</Button>{' '}
             </a>
-            <a href="https://forms.gle/D4PizUX68qXWebjj8" target="_blank">
-              <Button variant="outline-light">Feedback</Button>
-            </a>
-           
+              <br></br>
+            <GitHubButton href="https://github.com/TQRG/secom" data-color-scheme="no-preference: dark_high_contrast; light: dark_high_contrast; dark: dark_high_contrast;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star tqrg/secom on GitHub">Star</GitHubButton>
           </div>
           <div class="col col-md-4" id="illustration">
             <Illustration />
@@ -31,6 +37,14 @@ function Convention() {
         </Container>
         </header>
       <div class="main-section">
+
+      <Container>
+          <Row>
+            <h1>News</h1>
+            <p class="news">🤩  SECOM was accepted at the <i><a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview">Mining Software Repositories</a></i> (MSR'22) Conference for the Industry Track, co-located with the <i><a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a></i> (ICSE'22) - <i><a href="">pre-print available soon</a></i>.</p>
+          </Row>
+        </Container>
+
         <Container>
           <Row>
           <div class="col col-md-12">
@@ -46,11 +60,11 @@ function Convention() {
               <br></br>
               3   Detailed explanation of the subject/header in ~75 words.
               <br></br>
-              4   Explain the security issue(s) that this commit is patching. 
+              4   (what) Explain the security issue(s) that this commit is patching. 
               <br></br>
-              5   Focus on why this patch is important and its impact.  
+              5   (why) Focus on why this patch is important and its impact.  
               <br></br>
-              6   Describe how the issue is patched. 
+              6   (how) Describe how the issue is patched. 
               <br></br>
               7
               <br></br>
@@ -115,6 +129,12 @@ function Convention() {
               <br></br>
               &lt;body&gt;
               <br></br>
+              # (what) describe the vulnerability/problem 
+              <br></br>
+              # (why) describe its impact
+              <br></br>
+              # (how) describe the patch/fix
+              <br></br>
               <br></br>
               Weakness: &lt;Weakness Name or CWE-ID&gt;
               <br></br>
@@ -162,8 +182,7 @@ function Convention() {
             <ul>
             <li>Atomic changes: Commit each patch as a separate change <a href="https://www.freshconsulting.com/insights/blog/atomic-commits/" target="_blank">[4]</a>.</li>
 
-            <li>A <code class="details-code">&lt;type&gt;</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">[1]</a>. Our suggestion is to use 
-            <code class="details-code">vuln-fix</code> to specify the fix is related to a vulnerability.</li>
+            <li>A <code class="details-code">&lt;type&gt;</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">[1]</a>. Our suggestion is to use&nbsp;<code class="details-code">vuln-fix</code> to specify the fix is related to a vulnerability.</li>
               <li><code class="details-code">&lt;header/subject&gt;</code>: ~50 chars (max 72 chars); capitalized; no period in the end; imperative form.</li>
               <li><code class="details-code">&lt;Vuln-ID&gt;</code>: When available; e.g., CVE, OSV, GHSA, and other formats.</li>
               <li><code class="details-code">&lt;body&gt;</code>: Describe what (problem), why (impact) and how (patch). ~75 words (25 words per point).</li>
@@ -190,7 +209,7 @@ function Convention() {
             <div class="col col-md-12">
             <pre>
             <code>
-            patch: Sanitize URLs to reject malicious data (CVE-2012-0036)
+            vuln-fix: Sanitize URLs to reject malicious data (CVE-2012-0036)
             <br></br>
             <br></br>
 Protocols (IMAP, POP3 and SMTP) that use the path part of a URL in a<br></br>

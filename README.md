@@ -1,14 +1,14 @@
 # SECOM
 
-A convention for making security commit messages more readable and structured. We aim to further the development of technology on top of commit messages for security.
+A convention for making security commit messages more readable and structured. Check the CONFIG.md file to know how to configure the template in your repository.
 
 ```
 1   vuln-fix: subject/header containing summary of changes in ~50 characters (Vuln-ID,)
 2
 3   Detailed explanation of the subject/header in ~75 words.
-4   Explain the security issue(s) that this commit is patching.
-5   Focus on why this patch is important and its impact.
-6   Describe how the issue is patched.
+4   (what) Explain the security issue(s) that this commit is patching.
+5   (why) Focus on why this patch is important and its impact.
+6   (how) Describe how the issue is patched.
 7
 8   [For Each Weakness in Weaknesses:]
 9   Weakness: weakness identification or CWE-ID.
@@ -40,6 +40,9 @@ This convention was inferred from merging different sources about creating bette
 <type>: <header/subject> (<Vuln-ID>)
 
 <body>
+# (what) describe the vulnerability/problem
+# (why) describe its impact
+# (how) describe the patch/fix
 
 Weakness: <Weakness Name or CWE-ID>
 Severity: <Low, Medium, High and Critical>

@@ -1,0 +1,21 @@
+vuln-fix: <header/subject> (<Vuln-ID>)
+
+<body>
+# (what) describe the vulnerability/problem
+# (why) describe its impact
+# (how) describe the patch/fix
+
+Weakness: <Weakness Name or CWE-ID>
+Severity: <Low, Medium, High and Critical>
+CVSS: <Numerical representation (0-10) of severity>
+Detection: <Detection Method>
+Report: <Report Link>
+Introduced in: <Commit Hash>
+
+Reported-by: <Name> (<Contact>)
+Signed-off-by: <Name> (<Contact>)
+
+Bug-tracker: <Bug-tracker Link>
+OR
+Resolves: <Issue/PR No.>
+See also: <Issue/PR No.>

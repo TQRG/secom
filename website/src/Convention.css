@@ -34,6 +34,14 @@
   color: white;
 }
 
+.news {
+  padding-bottom: 30px;
+}
+
+.news a {
+  color: #4b5fac;
+}
+
 .footer {
   background-color: #4a5fac;
   height: 25vh;
@@ -74,7 +82,7 @@
   font-family: 'Raleway', sans-serif; 
   font-weight:800; 
   color: #4a5fac;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 a{
@@ -92,7 +100,7 @@ hr{
 .details-code{
   color: #4a5fac !important;
   line-height: 28px !important;
-  font-size: 25px !important;
+  font-size: 20px !important;
 }
 
 pre{
@@ -107,7 +115,7 @@ pre{
 }
 
 code{
-  font-size: 17px !important;
+  font-size: 15px !important;
   line-height: 10px;
   color: #ffffff !important;
   font-family: monospace;
