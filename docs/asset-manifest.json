@@ -1,26 +1,16 @@
 {
   "files": {
-    "main.css": "/secom/static/css/main.baa8e5b1.chunk.css",
-    "main.js": "/secom/static/js/main.2e071a90.chunk.js",
-    "main.js.map": "/secom/static/js/main.2e071a90.chunk.js.map",
-    "runtime-main.js": "/secom/static/js/runtime-main.0dc3b04c.js",
-    "runtime-main.js.map": "/secom/static/js/runtime-main.0dc3b04c.js.map",
-    "static/css/2.da1eef19.chunk.css": "/secom/static/css/2.da1eef19.chunk.css",
-    "static/js/2.d843c375.chunk.js": "/secom/static/js/2.d843c375.chunk.js",
-    "static/js/2.d843c375.chunk.js.map": "/secom/static/js/2.d843c375.chunk.js.map",
-    "static/js/3.5dac711d.chunk.js": "/secom/static/js/3.5dac711d.chunk.js",
-    "static/js/3.5dac711d.chunk.js.map": "/secom/static/js/3.5dac711d.chunk.js.map",
+    "main.css": "/secom/static/css/main.a303f840.css",
+    "main.js": "/secom/static/js/main.7bcd9925.js",
+    "static/js/787.39d6ebe3.chunk.js": "/secom/static/js/787.39d6ebe3.chunk.js",
+    "static/media/commit.svg": "/secom/static/media/commit.4237865c786ac36780dc39f55a3363fc.svg",
     "index.html": "/secom/index.html",
-    "static/css/2.da1eef19.chunk.css.map": "/secom/static/css/2.da1eef19.chunk.css.map",
-    "static/css/main.baa8e5b1.chunk.css.map": "/secom/static/css/main.baa8e5b1.chunk.css.map",
-    "static/js/2.d843c375.chunk.js.LICENSE.txt": "/secom/static/js/2.d843c375.chunk.js.LICENSE.txt",
-    "static/media/commit.4237865c.svg": "/secom/static/media/commit.4237865c.svg"
+    "main.a303f840.css.map": "/secom/static/css/main.a303f840.css.map",
+    "main.7bcd9925.js.map": "/secom/static/js/main.7bcd9925.js.map",
+    "787.39d6ebe3.chunk.js.map": "/secom/static/js/787.39d6ebe3.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.0dc3b04c.js",
-    "static/css/2.da1eef19.chunk.css",
-    "static/js/2.d843c375.chunk.js",
-    "static/css/main.baa8e5b1.chunk.css",
-    "static/js/main.2e071a90.chunk.js"
+    "static/css/main.a303f840.css",
+    "static/js/main.7bcd9925.js"
   ]
 }
