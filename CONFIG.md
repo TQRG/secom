@@ -9,7 +9,7 @@ mkdir templates/
 wget https://github.com/TQRG/secom/template/secom
 ```
 
-Setting an alias in your github configuration `~/.gitconfig` for security commits is helpful to distinguish security commits than other types of commits. Add the following to your `~/.gitconfig` file:
+Setting an alias in your github configuration `~/.gitconfig` for security commits is helpful to distinguish security commits from other types of commits. Add the following to your `~/.gitconfig` file:
 
 ```bash
 [alias]
