@@ -1,6 +1,6 @@
 # SECOM
 
-A convention for making security commit messages more readable and structured. Check the CONFIG.md file to know how to configure the template in your repository.
+A convention for making security commit messages more readable and structured. Check the [CONFIG.md](https://github.com/TQRG/secom/blob/main/CONFIG.md) file to know how to configure the template in your repository.
 
 ```
 1   vuln-fix: subject/header containing summary of changes in ~50 characters (Vuln-ID,)
@@ -51,8 +51,8 @@ Detection: <Detection Method>
 Report: <Report Link>
 Introduced in: <Commit Hash>
 
-Reported-by: <Name> <Contact>
-Signed-off-by: <Name> <Contact>
+Reported-by: <Name> (<Contact>)
+Signed-off-by: <Name> (<Contact>)
 
 Bug-tracker: <Bug-tracker Link>
 OR

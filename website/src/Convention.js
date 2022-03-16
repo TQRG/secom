@@ -17,7 +17,7 @@ function Convention() {
           <div class="col col-md-7" id="presentation">
             <h1>SECOM CONVENTION</h1>
             <p>A convention for security commit messages</p>
-            <a href="https://github.com/TQRG/secom/CONFIG.md" target="_blank">
+            <a href="https://github.com/TQRG/secom/blob/main/CONFIG.md" target="_blank">
               <Button variant="outline-light">How to configure</Button>{' '}
             </a>
             <a href="https://forms.gle/D4PizUX68qXWebjj8" target="_blank">
@@ -149,9 +149,9 @@ function Convention() {
               Introduced in: &lt;Commit Hash&gt;
               <br></br>
               <br></br>
-              Reported-by: &lt;Name&gt; &lt;Contact&gt;
+              Reported-by: &lt;Name&gt; (&lt;Contact&gt;)
               <br></br>
-              Signed-off-by: &lt;Name&gt; &lt;Contact&gt;
+              Signed-off-by: &lt;Name&gt; (&lt;Contact&gt;)
               <br></br>
               <br></br>
               Bug-tracker: &lt;Bug-tracker Link&gt;
