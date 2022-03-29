@@ -1,6 +1,6 @@
 {
   "homepage": "https://tqrg.github.io/secom/",
-  "name": "website",
+  "name": "SECOM website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
     "react-github-btn": "^1.2.1",
     "react-markdown": "^7.0.0",
     "react-router-dom": "^5.2.0",

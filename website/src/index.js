@@ -5,8 +5,9 @@ import Convention from './Convention';
 import reportWebVitals from './reportWebVitals';
 import ReactGA from 'react-ga';
 
-const TRACKING_ID = "283108977"; 
+const TRACKING_ID = "UA-224170174-1"; 
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>

@@ -17,14 +17,14 @@ function Convention() {
           <div class="col col-md-7" id="presentation">
             <h1>SECOM CONVENTION</h1>
             <p>A convention for security commit messages</p>
-            <a href="https://github.com/TQRG/secom/blob/main/CONFIG.md" target="_blank">
+            <a href="https://github.com/TQRG/secom/blob/main/CONFIG.md" target="_blank" rel="noreferrer">
               <Button variant="outline-light">How to configure</Button>{' '}
             </a>
-            <a href="https://forms.gle/D4PizUX68qXWebjj8" target="_blank">
+            <a href="https://forms.gle/D4PizUX68qXWebjj8" target="_blank" rel="noreferrer">
               <Button variant="outline-light">Feedback</Button>{' '}
             </a>
             {/* <Button variant="outline-light">Best Practices - <i>Soon</i></Button>{' '} */}
-            <a href="https://github.com/TQRG/security-patches-dataset" target="_blank">
+            <a href="https://github.com/TQRG/security-patches-dataset" target="_blank" rel="noreferrer">
               <Button variant="outline-light">Dataset</Button>{' '}
             </a>
               <br></br>
@@ -41,7 +41,7 @@ function Convention() {
       <Container>
           <Row>
             <h1>News</h1>
-            <p class="news">🤩  SECOM was accepted at the <i><a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview">Mining Software Repositories</a></i> (MSR'22) Conference for the Industry Track, co-located with the <i><a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a></i> (ICSE'22) - <i><a href="">pre-print available soon</a></i>.</p>
+            <p class="news">🤩  SECOM was accepted at the <i><a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview" rel="noreferrer">Mining Software Repositories</a></i> (MSR'22) Conference for the Industry Track, co-located with the <i><a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a></i> (ICSE'22) - <i>pre-print available soon</i>.</p>
           </Row>
         </Container>
 
@@ -180,9 +180,9 @@ function Convention() {
           </div>
           <div class="col col-md-6 details">
             <ul>
-            <li>Atomic changes: Commit each patch as a separate change <a href="https://www.freshconsulting.com/insights/blog/atomic-commits/" target="_blank">[4]</a>.</li>
+            <li>Atomic changes: Commit each patch as a separate change <a href="https://www.freshconsulting.com/insights/blog/atomic-commits/" target="_blank" rel="noreferrer">[4]</a>.</li>
 
-            <li>A <code class="details-code">&lt;type&gt;</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">[1]</a>. Our suggestion is to use&nbsp;<code class="details-code">vuln-fix</code> to specify the fix is related to a vulnerability.</li>
+            <li>A <code class="details-code">&lt;type&gt;</code> should be assigned to each commit <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noreferrer">[1]</a>. Our suggestion is to use&nbsp;<code class="details-code">vuln-fix</code> to specify the fix is related to a vulnerability.</li>
               <li><code class="details-code">&lt;header/subject&gt;</code>: ~50 chars (max 72 chars); capitalized; no period in the end; imperative form.</li>
               <li><code class="details-code">&lt;Vuln-ID&gt;</code>: When available; e.g., CVE, OSV, GHSA, and other formats.</li>
               <li><code class="details-code">&lt;body&gt;</code>: Describe what (problem), why (impact) and how (patch). ~75 words (25 words per point).</li>
@@ -205,7 +205,7 @@ function Convention() {
         <Container>
           <Row>
             <h1>Example</h1>
-            <p>This is an example of the application of SECOM convention to a known security commit message <a href="https://github.com/curl/curl/commit/75ca568fa1c19de4c5358fed246686de8467c238" target="_blank"><code class="details-code">[curl/curl/75ca568]</code></a>: </p>
+            <p>This is an example of the application of SECOM convention to a known security commit message <a href="https://github.com/curl/curl/commit/75ca568fa1c19de4c5358fed246686de8467c238" target="_blank" rel="noreferrer"><code class="details-code">[curl/curl/75ca568]</code></a>: </p>
             <div class="col col-md-12">
             <pre>
             <code>
@@ -251,10 +251,10 @@ See also: #17937
           <Row>
             <h1>Sources</h1>
             <ol>
-              <li>Conventional Commits V1.0.0 <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">🔗</a></li>
-              <li>How to Write a Git Commit Message by Chris Beams <a href="https://chris.beams.io/posts/git-commit/" target="_blank">🔗</a></li>
-              <li>A good commit message looks like this by Linus Torvalds <a href="https://gist.github.com/matthewhudson/1475276" target="_blank">🔗</a></li>
-              <li>Developer Tip: Keep Your Commits “Atomic” by Sean Patterson <a href="https://www.freshconsulting.com/insights/blog/atomic-commits/" target="_blank">🔗</a></li>
+              <li>Conventional Commits V1.0.0 <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank" rel="noreferrer">🔗</a></li>
+              <li>How to Write a Git Commit Message by Chris Beams <a href="https://chris.beams.io/posts/git-commit/" target="_blank" rel="noreferrer">🔗</a></li>
+              <li>A good commit message looks like this by Linus Torvalds <a href="https://gist.github.com/matthewhudson/1475276" target="_blank" rel="noreferrer">🔗</a></li>
+              <li>Developer Tip: Keep Your Commits “Atomic” by Sean Patterson <a href="https://www.freshconsulting.com/insights/blog/atomic-commits/" target="_blank" rel="noreferrer">🔗</a></li>
             </ol>
           </Row>
         </Container>
@@ -262,7 +262,7 @@ See also: #17937
         <header className="footer">
           <Container>
             <Row>
-              <p>Collaboration between <a href="https://tecnico.ulisboa.pt/en/" target="_blank">Técnico</a> (U. Lisbon), <a href="https://sigarra.up.pt/feup/en/web_page.inicial" target="_blank">FEUP</a> (U. Porto), <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a> (CMU)</p>
+              <p>Collaboration between <a href="https://tecnico.ulisboa.pt/en/" target="_blank" rel="noreferrer">Técnico</a> (U. Lisbon), <a href="https://sigarra.up.pt/feup/en/web_page.inicial" target="_blank" rel="noreferrer">FEUP</a> (U. Porto), <a href="https://www.cmu.edu/" target="_blank" rel="noreferrer">Carnegie Mellon University</a> (CMU) . Maintained by <a href="https://twitter.com/sofiaoreis">@sofiaoreis</a></p>
             </Row>
           </Container>
           
