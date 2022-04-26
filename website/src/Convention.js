@@ -6,6 +6,7 @@ import { Container, Row, Button } from 'react-bootstrap';
 
 import {ReactComponent as Illustration} from './assets/commit.svg';
 import GitHubButton from 'react-github-btn'
+import msr22 from './documents/msr22.pdf';
 
 
 function Convention() {
@@ -41,7 +42,7 @@ function Convention() {
       <Container>
           <Row>
             <h1>News</h1>
-            <p class="news">🤩  SECOM was accepted at the <i><a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview" rel="noreferrer">Mining Software Repositories</a></i> (MSR'22) Conference for the Industry Track, co-located with the <i><a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a></i> (ICSE'22) - <i>pre-print available soon</i>.</p>
+            <p class="news">🤩  SECOM was accepted at the <i><a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview" rel="noreferrer">Mining Software Repositories</a></i> (MSR'22) Conference for the Industry Track, co-located with the <i><a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a></i> (ICSE'22) - <a href={msr22} rel="_blank">pre-print</a>.</p>
           </Row>
         </Container>
 
