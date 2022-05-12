@@ -42,7 +42,9 @@ function Convention() {
       <Container>
           <Row>
             <h1>News</h1>
-            <p class="news">🤩  SECOM was accepted at the <i><a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview" rel="noreferrer">Mining Software Repositories</a></i> (MSR'22) Conference for the Industry Track, co-located with the <i><a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a></i> (ICSE'22) - <a href={msr22} rel="_blank">pre-print</a>.</p>
+            <p class="news">
+              🏆 SECOM has been selected for the <a href="https://conf.researchr.org/track/msr-2022/msr-2022-foss-award?#Recipients" rel="_blank">FOSS Award</a> at MSR'22. <br></br>
+              🤩 <a href={msr22} rel="_blank">[pre-print]</a>  SECOM was accepted at the <i><a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview" rel="noreferrer">Mining Software Repositories</a></i> (MSR'22) Conference for the Industry Track, co-located with the <i><a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a></i> (ICSE'22)</p>
           </Row>
         </Container>
 
