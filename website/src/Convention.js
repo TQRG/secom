@@ -7,6 +7,7 @@ import { Container, Row, Button } from 'react-bootstrap';
 import {ReactComponent as Illustration} from './assets/commit.svg';
 import GitHubButton from 'react-github-btn'
 import msr22 from './documents/msr22.pdf';
+import msr22pr from './documents/msr22_presentation.pdf';
 
 
 function Convention() {
@@ -43,8 +44,9 @@ function Convention() {
           <Row>
             <h1>News</h1>
             <p class="news">
+              🎙 <a href={msr22pr} rel="_blank">[slides]</a> SECOM was presented at the <a href="https://conf.researchr.org/home/msr-2022/" rel="noreferrer">International Conference on Mining Software Repositories</a> (MSR'22). <br></br>
               🏆 SECOM has been selected for the <a href="https://conf.researchr.org/track/msr-2022/msr-2022-foss-award?#Recipients" rel="_blank">FOSS Award</a> at MSR'22. <br></br>
-              🤩 <a href={msr22} rel="_blank">[pre-print]</a>  SECOM was accepted at the <i><a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview" rel="noreferrer">Mining Software Repositories</a></i> (MSR'22) Conference for the Industry Track, co-located with the <i><a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a></i> (ICSE'22)</p>
+              🤩 <a href={msr22} rel="_blank">[pre-print]</a>  SECOM was accepted at the <a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview" rel="noreferrer">International Conference on Mining Software Repositories</a> (MSR'22) for the Industry Track, co-located with the <a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a> (ICSE'22)</p>
           </Row>
         </Container>
 
