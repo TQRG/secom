@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/secom/static/css/main.a303f840.css",
-    "main.js": "/secom/static/js/main.755fa12c.js",
+    "main.js": "/secom/static/js/main.c63e36ca.js",
     "static/js/787.af97be1d.chunk.js": "/secom/static/js/787.af97be1d.chunk.js",
-    "static/media/msr22_presentation.pdf": "/secom/static/media/msr22_presentation.bdf29e007655fd66322b.pdf",
+    "static/media/msr22_presentation.pdf": "/secom/static/media/msr22_presentation.ceef8f1d5033e13f03ec.pdf",
     "static/media/msr22.pdf": "/secom/static/media/msr22.0d95603005e6c291d52e.pdf",
     "static/media/commit.svg": "/secom/static/media/commit.4237865c786ac36780dc39f55a3363fc.svg",
     "index.html": "/secom/index.html",
     "main.a303f840.css.map": "/secom/static/css/main.a303f840.css.map",
-    "main.755fa12c.js.map": "/secom/static/js/main.755fa12c.js.map",
+    "main.c63e36ca.js.map": "/secom/static/js/main.c63e36ca.js.map",
     "787.af97be1d.chunk.js.map": "/secom/static/js/787.af97be1d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a303f840.css",
-    "static/js/main.755fa12c.js"
+    "static/js/main.c63e36ca.js"
   ]
 }
