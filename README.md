@@ -71,17 +71,17 @@ See also: <Issue/PR No.>
 * `<header/subject>`: ~50 chars (max 72 chars); capitalized; no period in the end; imperative form.
 * `<Vuln-ID>`: When available; e.g., CVE, OSV, GHSA, and other formats.
 * `<body>`: Describe what (problem), why (impact) and how (patch). ~75 words (25 words per point).
-* Weakness: Name or CWE-ID.
-* Severity: Severity of the issue. Values: Low, Medium, High, Critical
-* CVSS: Numerical (0-10) representation of the severity of a security vulnerability (Common Vulnerability Scoring System).
-* Detection: Detection method. Values: Tool, Manual, Exploit, etc.
-* Report: Link for vulnerability report.
-* Introduced in: Commit hash from the commit that introduced the vulnerability.
-* Reported-by: Name/Contact of the person that reported the issue.
-* Reviewed-by: Name/contact of the person that reviewed the patch.
-* Co-authored-by: Name/contact of the person that co-authored the fix for the issue.
-* Signed-off-by: Name/Contact of the person that closed the issue.
-* Bug-tracker: Link to the issue in an external bug-tracker.
-* Resolves.. See also: When GitHub is used to manage security fixes.
+* `Weakness:` Name or CWE-ID.
+* `Severity:` Severity of the issue. Values: Low, Medium, High, Critical
+* `CVSS:` Numerical (0-10) representation of the severity of a security vulnerability (Common Vulnerability Scoring System).
+* `Detection:` Detection method. Values: Tool, Manual, Exploit, etc.
+* `Report:` Link for vulnerability report.
+* `Introduced in:` Commit hash from the commit that introduced the vulnerability.
+* `Reported-by:` Name/Contact of the person that reported the issue.
+* `Reviewed-by:` Name/contact of the person that reviewed the patch.
+* `Co-authored-by:` Name/contact of the person that co-authored the fix for the issue.
+* `Signed-off-by:` Name/Contact of the person that closed the issue.
+* `Bug-tracker:` Link to the issue in an external bug-tracker.
+* `Resolves.. See also:` When GitHub is used to manage security fixes.
   
 In the future, we plan to infer the importance of each field and determine different levels of compliance. For now, we believe the following set of fields is the minimum required to detect and classify security commits succesfully: `<type>`, `<header/subject>`, `<body>`, `Severity`, `Weakness`, `Signed-off-by`
