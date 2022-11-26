@@ -22,12 +22,15 @@ function Convention() {
             <a href="https://github.com/TQRG/secom/blob/main/CONFIG.md" target="_blank" rel="noreferrer">
               <Button variant="outline-light">How to configure</Button>{' '}
             </a>
-            <a href="https://forms.gle/D4PizUX68qXWebjj8" target="_blank" rel="noreferrer">
-              <Button variant="outline-light">Feedback</Button>{' '}
+            <a href="https://tqrg.github.io/secomlint/" target="_blank" rel="noreferrer">
+              <Button variant="outline-light">Linter</Button>{' '}
             </a>
             {/* <Button variant="outline-light">Best Practices - <i>Soon</i></Button>{' '} */}
             <a href="https://github.com/TQRG/security-patches-dataset" target="_blank" rel="noreferrer">
               <Button variant="outline-light">Dataset</Button>{' '}
+            </a>
+            <a href="https://forms.gle/D4PizUX68qXWebjj8" target="_blank" rel="noreferrer">
+              <Button variant="outline-light">Feedback</Button>{' '}
             </a>
               <br></br>
             <GitHubButton href="https://github.com/TQRG/secom" data-color-scheme="no-preference: dark_high_contrast; light: dark_high_contrast; dark: dark_high_contrast;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star tqrg/secom on GitHub">Star</GitHubButton>
@@ -44,9 +47,10 @@ function Convention() {
           <Row>
             <h1>News</h1>
             <p class="news">
+              💯 Released <a href="https://tqrg.github.io/secomlint/" rel="_blank">SECOMlint</a>: A compliance checker for the SECOM convention!  <br></br>
               🎙 <a href={msr22pr} rel="_blank">[slides]</a> SECOM was presented at the <a href="https://conf.researchr.org/home/msr-2022/" rel="noreferrer">International Conference on Mining Software Repositories</a> (MSR'22). <br></br>
               🏆 SECOM has been selected for the <a href="https://conf.researchr.org/track/msr-2022/msr-2022-foss-award?#Recipients" rel="_blank">FOSS Award</a> at MSR'22. <br></br>
-              🤩 <a href={msr22} rel="_blank">[pre-print]</a>  SECOM was accepted at the <a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview" rel="noreferrer">International Conference on Mining Software Repositories</a> (MSR'22) for the Industry Track, co-located with the <a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a> (ICSE'22)</p>
+              🤩 <a href="https://www.computer.org/csdl/proceedings-article/msr/2022/930300a764/1Eo5Tyf4nsc" rel="_blank">[paper]</a> SECOM was published at the <a href="https://conf.researchr.org/track/msr-2022/msr-2022-industry-track#event-overview" rel="noreferrer">International Conference on Mining Software Repositories</a> (MSR'22) for the Industry Track, co-located with the <a href="https://conf.researchr.org/home/icse-2022">International Conference in Software Engineering</a> (ICSE'22)</p>
           </Row>
         </Container>
 
@@ -54,12 +58,12 @@ function Convention() {
           <Row>
           <div class="col col-md-12">
             <h1>Security Commits</h1>
-            <p>A convention for making security commit messages more readable and structured. We 
+            <p>🍵 A convention for making security commit messages more readable and structured. We 
               aim to further the development of technology on top of commit messages for security. 
             </p>
             <pre>
               <code>
-              1   vuln-fix: subject/header containing summary of changes in ~50 characters (Vuln-ID,)
+              1   vuln-fix: subject/header containing summary of changes in ~50 characters (Vuln-ID)
               <br></br>
               2
               <br></br>
@@ -91,27 +95,29 @@ function Convention() {
               <br></br>
               16
               <br></br>
-              17  Reported-by: reporter name 1 &lt;reporter-email-1@host.com&gt;
+              17  Reported-by: reporter name &lt;reporter-email@host.com&gt;
               <br></br>
-              18  Reported-by: reporter name 2 &lt;reporter-email-2@host.com&gt;
+              18  Reviewed-by: reviewer name &lt;reviewer-email@host.com&gt;
               <br></br>
-              19  Signed-off-by: your name &lt;your-email@yourhost.com&gt;
+              19  Co-Authored-by: co-author name &lt;co-author-email@host.com&gt;
               <br></br>
-              20
+              20  Signed-off-by: your name &lt;your-email@yourhost.com&gt;
               <br></br>
-              21  <strong>[If you use an issue tracker, add reference to it here:]</strong>
+              21
               <br></br>
-              22  <strong>[if external issue tracker:]</strong>
+              22  <strong>[If you use an issue tracker, add reference to it here:]</strong>
               <br></br>
-              23  Bug-tracker: https://link-to-bug-tracker/id 
+              23  <strong>[if external issue tracker:]</strong>
               <br></br>
-              24
+              24  Bug-tracker: https://link-to-bug-tracker/id 
               <br></br>
-              25  <strong>[if github used as issue tracker:]</strong>
+              25
               <br></br>
-              26  Resolves: #123
+              26  <strong>[if github used as issue tracker:]</strong>
               <br></br>
-              27  See also: #456, #789
+              27  Resolves: #123
+              <br></br>
+              28  See also: #456, #789
 
               </code>
             </pre>
@@ -156,6 +162,10 @@ function Convention() {
               <br></br>
               Reported-by: &lt;Name&gt; (&lt;Contact&gt;)
               <br></br>
+              Reviewed-by: &lt;Name&gt; (&lt;Contact&gt;)
+              <br></br>
+              Co-authored-by: &lt;Name&gt; (&lt;Contact&gt;)
+              <br></br>
               Signed-off-by: &lt;Name&gt; (&lt;Contact&gt;)
               <br></br>
               <br></br>
@@ -169,12 +179,12 @@ function Convention() {
             </code>
           </pre>
         <p><strong>Important:</strong> <br></br>
-        <code class="details-code">&lt;type&gt;</code>{' '},{' '}
-        <code class="details-code">&lt;header/subject&gt;</code>,<br></br>
-        <code class="details-code">&lt;Vuln-ID&gt;</code>,
-        <code class="details-code">&lt;body&gt;</code>{' '},{' '}
-        <code class="details-code">Severity</code>{' '},{' '}
-        <code class="details-code">Weakness</code>
+        <code class="details-code">&lt;type&gt;</code>,{' '}
+        <code class="details-code">&lt;header/subject&gt;</code>,{' '}
+        <code class="details-code">&lt;body&gt;</code>,{' '}
+        <code class="details-code">Severity</code>,{' '}
+        <code class="details-code">Weakness</code>,{' '}
+        <code class="details-code">Signed-off-by</code>
         <br></br>
         <br></br>
         In the future, we plan to infer the importance of each field
@@ -197,8 +207,10 @@ function Convention() {
               <li><code class="details-code">Detection</code>: Detection method.<br></br>Values: Tool, Manual, Exploit, etc.</li>
               <li><code class="details-code">Report</code>: Link for vulnerability report.</li> 
               <li><code class="details-code">Introduced in</code>: Commit hash from the commit that introduced the vulnerability.</li> 
-              <li><code class="details-code">Reported-by</code>: Name/Contact of the person that reported the issue.</li>
-              <li><code class="details-code">Signed-off-by</code>: Name/Contact of the person that closed the issue.</li>
+              <li><code class="details-code">Reported-by</code>: Name/contact of the person that reported the issue.</li>
+              <li><code class="details-code">Reviewed-by</code>: Name/contact of the person that reviewed the patch.</li>
+              <li><code class="details-code">Co-authored-by</code>: Name/contact of the person that co-authored the fix for the issue.</li>
+              <li><code class="details-code">Signed-off-by</code>: Name/contact of the person that fixed the issue.</li>
               <li><code class="details-code">Bug-tracker</code>: Link to the issue in an external bug-tracker.</li>
               <li><code class="details-code">Resolves.. See also</code>: When GitHub is used to manage security fixes.</li>
             </ul>
@@ -222,11 +234,13 @@ decoded manner now use the new Curl_urldecode() function to reject URLs<br></br>
 with embedded control codes (anything that is or decodes to a byte value<br></br>
 less than 32).
 <br></br>
-<br></br>
 URLs containing such codes could easily otherwise be used to do harm and<br></br>
 allow users to do unintended actions with otherwise innocent tools and<br></br>
-applications. Like for example using a URL like<br></br>
-pop3://pop3.example.com/1%0d%0aDELE%201 when the app wants a URL to get a mail <br></br>
+applications. 
+<br></br>
+Like for example using a URL like
+pop3://pop3.example.com/1%0d%0aDELE%201 <br></br>
+when the app wants a URL to get a mail 
 and instead this would delete one.
 <br></br>
 <br></br>
@@ -267,7 +281,7 @@ See also: #17937
         <header className="footer">
           <Container>
             <Row>
-              <p>Collaboration between <a href="https://tecnico.ulisboa.pt/en/" target="_blank" rel="noreferrer">Técnico</a> (U. Lisbon), <a href="https://sigarra.up.pt/feup/en/web_page.inicial" target="_blank" rel="noreferrer">FEUP</a> (U. Porto), <a href="https://www.cmu.edu/" target="_blank" rel="noreferrer">Carnegie Mellon University</a> (CMU) . Maintained by <a href="https://twitter.com/sofiaoreis">@sofiaoreis</a></p>
+              <p><strong><a href="https://cmusv.github.io/SecurityAware/">SecurityAware</a></strong> Project. Collaboration between <a href="https://tecnico.ulisboa.pt/en/" target="_blank" rel="noreferrer">Técnico</a> (U. Lisbon), <a href="https://sigarra.up.pt/feup/en/web_page.inicial" target="_blank" rel="noreferrer">FEUP</a> (U. Porto), <a href="https://www.cmu.edu/" target="_blank" rel="noreferrer">Carnegie Mellon University</a> (CMU) . Maintained by <a href="https://twitter.com/sofiaoreis">@sofiaoreis</a></p>
             </Row>
           </Container>
           
