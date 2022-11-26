@@ -13,6 +13,8 @@ Report: <Report Link>
 Introduced in: <Commit Hash>
 
 Reported-by: <Name> (<Contact>)
+Reviewed-by: <Name> (<Contact>)
+Co-authored-by: <Name> (<Contact>)
 Signed-off-by: <Name> (<Contact>)
 
 Bug-tracker: <Bug-tracker Link>
